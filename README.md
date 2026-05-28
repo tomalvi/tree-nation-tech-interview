@@ -180,7 +180,7 @@ The dashboard is available at [http://localhost:8000](http://localhost:8000) and
 - Each customer is pre-registered in the system. The physical device sends the `customer_id` when detecting an entry.
 - The tree counter increments every X visits exactly (e.g. on visit 5, 10, 15...). Partial cycles do not count.
 - `last_visit_at` is stored directly on the customer record for fast access, as the spec explicitly requires it.
-- Visits are stored with timezone `Europe/Madrid` (configurable via "config/app.ph `'timezone' => 'Europe/Madrid'`).
+- Visits are stored with timezone `Europe/Madrid` (configurable via "config/app.php `'timezone' => 'Europe/Madrid'`).
 - The hourly aggregation is based on the current day's data.
 
 ---
