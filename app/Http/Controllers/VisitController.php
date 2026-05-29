@@ -46,6 +46,7 @@ class VisitController extends Controller
     public function hourly()
     {
         $visits = Visit::selectRaw('HOUR(visited_at) as hour, COUNT(*) as total')
+            ->whereDate('visited_at', Carbon::today())
             ->groupBy('hour')
             ->orderBy('hour')
             ->get();
