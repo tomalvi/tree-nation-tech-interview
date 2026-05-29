@@ -208,5 +208,6 @@ database/
     CustomerSeeder.php
   factories/
     CustomerFactory.php
+    VisitrFactory.php
 ```
 
